@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <title>site go</title>
+    <link rel="icon" type="image/svg+xml" href="img/favicon.svg">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <section class="banner">
+        <div class="container">
+            <div class="header">
+                <h1 class="banner-title">GAME OVER</h1>
+                <p class="banner-text">Новый формат игр и отдыха</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="halls">
+        <div class="container">
+            <h2 class="halls-title">Наши залы</h2>
+            <ul class="halls-list">
+                <li class="halls-item vibes">
+                    <p class="halls-text">
+                        80’s vibes
+                    </p>
+                </li>
+                <li class="halls-item star-wars">
+                    <p class="halls-text">
+                        Star wars
+                    </p>
+                </li>
+                <li class="halls-item wild-west">
+                    <p class="halls-text">
+                        Wild west
+                    </p>
+                </li>
+                <li class="halls-item neon-style">
+                    <p class="halls-text">
+                        Neon style
+                    </p>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="book">
+        <div class="container">
+            <h2 class="book-title">Забронировать</h2>
+            <form action="https://jsonplaceholder.typicode.com/posts" method="post">
+                <fieldset class="booking">
+                    <label class="label">
+                        <input type="radio" name="hall" value="80's vibes">80's vibes
+                    </label>
+
+                    <label class="label">
+                        <input type="radio" name="hall" value="Star wars">star wars
+                    </label>
+
+                    <label class="label">
+                        <input type="radio" name="hall" value="Wild west">wild west
+                    </label>
+
+                    <label>
+                        <input type="radio" name="hall" value="Neon style">neon style
+                    </label>
+                </fieldset>
+
+                <fieldset class="booking">
+                    <legend>Собери набор развлечений</legend>
+
+                    <fieldset class="booking">
+                        <legend>Приставка:</legend>
+                        <label class="label">
+                            <input type="radio" name="console" value="PlayStation">PlayStation
+                        </label>
+
+                        <label class="label">
+                            <input type="radio" name="console" value="Sega Mega Drive">Sega Mega Drive
+                        </label>
+
+                        <label class="label">
+                            <input type="radio" name="console" value="X-box One S">X-box One S
+                        </label>
+
+                        <label class="label">
+                            <input type="radio" name="console" value="Dendy">Dendy
+                        </label>
+                    </fieldset>
+
+                    <fieldset class="booking">
+                        <legend>Настольные игры:</legend>
+                        <label class="label">
+                            <input type="checkbox" name="games" value="Jenga">Jenga
+                        </label>
+
+                        <label class="label">
+                            <input type="checkbox" name="games" value="Monopoly">Monopoly
+                        </label>
+
+                        <label class="label">
+                            <input type="checkbox" name="games" value="Munchkin">Манчкин
+                        </label>
+
+                        <label class="label">
+                            <input type="checkbox" name="games" value="Alias">Alias
+                        </label>
+                    </fieldset>
+
+                    <fieldset class="booking">
+                        <legend>Дополнительно:</legend>
+                        <label class="label">
+                            <input type="checkbox" name="additionally" value="karaoke">Караоке
+                        </label>
+
+                        <label class="label">
+                            <input type="checkbox" name="additionally" value="VR">VR
+                        </label>
+                    </fieldset>
+                </fieldset>
+
+                <fieldset class="booking">
+                    <legend>Выбери дату и время:</legend>
+                    <label class="label">
+                        Дата
+                        <input type="date" name="date" required>
+                    </label>
+
+                    <label class="label">
+                        Время
+                        <input type="time" name="time" required>
+                    </label>
+
+                    <label class="label">
+                        Количество человек
+                        <input type="text" name="people" required inputmode="numeric">
+                    </label>
+
+                    <label class="label">
+                        Имя
+                        <input type="text" name="name" required>
+                    </label>
+
+                    <label class="label">
+                        Фамилия
+                        <input type="text" name="surname" required>
+                    </label>
+
+                    <label class="label">
+                        Номер телефона
+                        <input type="tel" inputmode="tel" name="tel" required title="+7-___-___-__-__"
+                            pattern="\+?[7-8]-?[0-9]{3}-?[0-9]{3}-?[0-9]{2}-?[0-9]{2}$">
+                    </label>
+
+                    <label class="label">
+                        <input type="checkbox" name="age" value="I'm over 18">Я старше 18 лет
+                    </label>
+                </fieldset>
+
+                <button class="btn-book" type="submit">Забронировать</button>
+                <label class="label">
+                    <input type="checkbox" name="assent" value="I agree to data processing" required>Согласен на
+                    обработку данных
+                </label>
+            </form>
+        </div>
+    </section>
+
+    <section class="about">
+        <div class="container">
+            <div>
+                <h2 class="about-title">О нас</h2>
+                <p class="about-text">Для наших гостей мы создали концептуально новое игровое пространство виртуальной
+                    реальности в центральной части города.
+                </p>
+                <p class="about-text">Каждый день мы стараемся создавать для вас самую лучшую игровую атмосферу и
+                    радовать
+                    Вас топовыми игровыми разработками со всего мира.
+                </p>
+            </div>
+
+            <blockquote class="quote">
+                <p class="quote-text">GAME OVER – 
+                    это место незабываемых впечатлений»</p>
+            </blockquote>
+
+            <figure class="author">
+                <img class="author-img" src="img/person.png" alt="photo">
+                <figcaption class="author-text">Аркадий Абакшин, создатель игровой территории GAME OVER
+                </figcaption>
+            </figure>
+        </div>
+    </section>
+
+    <section class="faq">
+        <div class="container">
+            <h2 class="faq-title">Частые вопросы</h2>
+            <ul class="questions">
+                <li class="items-questions">
+                    <p class="text-item">
+                        Можно ли забронировать комнату онлайн?
+                    </p>
+                </li>
+                <li class="items-questions">
+                    <p class="text-item">
+                        Могут ли мне вернуть деньги за бронь?
+                    </p>
+                </li>
+                <li class="items-questions">
+                    <p class="text-item">
+                        Какая комната самая популярная?
+                    </p>
+                </li>
+                <li class="items-questions">
+                    <p class="text-item">
+                        Как получить VIP карту?
+                    </p>
+                </li>
+                <li class="items-questions">
+                    <p class="text-item">
+                        Какая комната самая популярная?
+                    </p>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="contacts">
+        <div class="container">
+            <h2 class="contacts-title">Контакты</h2>
+
+            <ul class="contacts-list">
+                <li class="contacts-item">
+                    <img src="img/location.svg" alt="Адрес" class="img-contact">
+                    г. Москва <br> ул. Аквамарина, 16
+                </li>
+
+                <li class="contacts-item">
+                    <a href="tel:89509302893" class="contacts-a">
+                        <img src="img/bx_bxs-phone-call.svg" alt="Позвонить" class="img-contact">
+                        8 (950) 930 - 28 - 93
+                    </a>
+                </li>
+
+                <li class="contacts-item">
+                    <a href="mailto:GameOver@gmail.com" class="contacts-a">
+                        <img src="img/envelope.svg" alt="Написать" class="img-contact">
+                        GameOver@gmail.com
+                    </a>
+                </li>
+            </ul>
+
+            <ul class="social-list">
+                <li class="social-items">
+                    <a href="https://www.vk.com">
+                        <img src="img/entypo-social_vk-with-circle.svg" alt="">
+                    </a>
+                </li>
+                <li class="social-items">
+                    <a href="#">
+                        <img src="img/bi_telegram.svg" alt="">
+                    </a>
+                </li>
+                <li class="social-items">
+                    <a href="https://ru.pinterest.com">
+                        <img src="img/foundation_social-pinterest.svg" alt="">
+                    </a>
+                </li>
+                <li class="social-items">
+                    <a href="https://www.stumbleupon.com">
+                        <img src="img/foundation_social-stumbleupon.svg" alt="">
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </section>
+</body>
+
+</html>
