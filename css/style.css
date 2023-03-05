@@ -90,13 +90,14 @@ h2 {
     line-height: 100%;
     font-weight: 900;
     margin-bottom: 0;
+    position: relative;
 }
 
 .banner-title:after {
     position: absolute;
     content: url(../img/banner.png);
-    top: 160px;
-    right: 15px;
+    top: 70px;
+    right: -120px;
 }
 
 .banner-text {
