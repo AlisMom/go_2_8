@@ -83,11 +83,11 @@ h2 {
 
 
 .banner {
-    padding-top: 146px;
+    padding: 146px 0 50px;
 }
 
 .header {
-    height: 762px;
+    height: 823px;
 }
 
 .banner-title {
@@ -97,13 +97,14 @@ h2 {
     margin-bottom: 0;
     position: relative;
     margin: 0;
+    letter-spacing: -0.1em;
 }
 
 .banner-title:after {
     position: absolute;
-    content: url(../img/banner.png);
+    content: url(./../img/banner.png);
     top: 70px;
-    right: -120px;
+    right: 0px;
 }
 
 .banner-text {
@@ -115,23 +116,23 @@ h2 {
 /* вторая секция */
 
 .halls {
-    padding: 146px 0 100px;
+    padding: 50px 0 50px;
 }
 
 .vibes {
-    background: url(../img/vibes.jpg) no-repeat center;
+    background: url(./../img/vibes.jpg) no-repeat center;
 }
 
 .star-wars {
-    background: url(../img/star_wars.jpg) no-repeat center;
+    background: url(./../img/star_wars.jpg) no-repeat center;
 }
 
 .wild-west {
-    background: url(../img/wild_west.jpg) no-repeat center;
+    background: url(./../img/wild_west.jpg) no-repeat center;
 }
 
 .neon-style {
-    background: url(../img/neon.jpg) no-repeat center;
+    background: url(./../img/neon.jpg) no-repeat center;
 }
 
 .halls-item {
@@ -150,6 +151,9 @@ h2 {
 }
 
 /* третья секция */
+.book {
+    padding: 50px 0 50px;
+}
 
 .book-title {
     padding-bottom: 50px;
@@ -162,7 +166,7 @@ h2 {
 /* четвертая секция */
 
 .about {
-    padding-top: 100px;
+    padding: 50px 0 50px;
 }
 
 .about-title {
@@ -219,7 +223,7 @@ h2 {
 
 /* шестая секция */
 .contacts {
-    padding-bottom: 50px;
+    padding: 50px 0 50px;
 }
 
 .contacts-title {
