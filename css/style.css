@@ -81,6 +81,11 @@ h2 {
     margin: 0 auto;
 }
 
+
+.banner {
+    padding-top: 146px;
+}
+
 .header {
     height: 762px;
 }
@@ -91,6 +96,7 @@ h2 {
     font-weight: 900;
     margin-bottom: 0;
     position: relative;
+    margin: 0;
 }
 
 .banner-title:after {
@@ -156,7 +162,7 @@ h2 {
 /* четвертая секция */
 
 .about {
-    padding: 100px 0 100px;
+    padding-top: 100px;
 }
 
 .about-title {
